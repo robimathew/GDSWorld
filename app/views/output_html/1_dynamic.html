@@ -1,0 +1,84 @@
+To generate the corresponding GOV.UK Design System-compliant HTML for the provided wireframe, we need to identify the various components and their structures. The wireframe includes a heading, introductory text, a start button linking to the first step, breadcrumbs, an accordion component, checkboxes, radio buttons, and error summaries.
+
+Here is the generated HTML:
+
+```html
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Home</a></li>
+    <li class="govuk-breadcrumbs__list-item">Page</li>
+  </ol>
+</div>
+
+<div id="accordion-default" class="govuk-accordion">
+  <button aria-controls="content-id-1" aria-expanded="false" class="govuk-accordion__section-button" id="heading-one">
+    How it works
+  </button>
+  <div aria-labelledby="heading-one" class="govuk-accordion__section" id="content-id-1">
+    <p>Text about how it works.</p>
+  </div>
+
+  <button aria-controls="content-id-2" aria-expanded="false" class="govuk-accordion__section-button" id="heading-two">
+    What you need to know
+  </button>
+  <div aria-labelledby="heading-two" class="govuk-accordion__section" id="content-id-2">
+    <p>Text about what you need to know.</p>
+  </div>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">What is your favourite colour?</legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="colour-red" name="colour" type="radio" value="red">
+        <label class="govuk-label govuk-radios__label" for="colour-red">Red</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="colour-blue" name="colour" type="radio" value="blue">
+        <label class="govuk-label govuk-radios__label" for="colour-blue">Blue</label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Do you have a UK passport?</legend>
+  <div class="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="yes-1" name="passport" type="radio" value="yes">
+      <label class="govuk-label govuk-radios__label" for="yes-1">Yes</label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="no-1" name="passport" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="no-1">No</label>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li><a href="#first-name">Enter your first name</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-form-group">
+  <label for="name" class="govuk-label govuk-label--m">What is your name?</label>
+  <input class="govuk-input govuk-automComplete-input" id="name" name="name" type="text" autocomplete="given-name">
+</div>
+
+<div class="govuk-form-group">
+  <label for="email" class="govuk-label govuk-label--m">What is your email address?</label>
+  <input class="govuk-input govuk-automComplete-input" id="email" name="email" type="text" autocomplete="email">
+</div>
+
+<div class="govuk-form-group">
+  <button class="govuk-button" data-module="govuk-button">Continue</button>
+</div>
+
+```

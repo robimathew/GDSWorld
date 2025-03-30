@@ -1,0 +1,91 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service. Help us improve it and <a class="govuk-link" href="#">give your feedback by email</a>.
+    </span>
+  </p>
+</div>
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+<main class="govuk-main-wrapper" id="main-content" role="main">
+    Here is a detailed breakdown of how to create the corresponding GOV.UK Design System-compliant HTML:
+    
+    **Step 1: Identify the Components**
+    
+    * The page has a sign-in form with fields for email address, password, and continue button.
+    * There are no hints or errors on this page.
+    
+    **Step 2: Create the Form Group**
+    
+    ```html
+    <div class="govuk-form-group">
+    ```
+    
+    This div will contain all the form elements.
+    
+    **Step 3: Add the Email Address Input Field**
+    
+    ```html
+    <label for="email" class="govuk-label">Email address</label>
+    <input id="email" name="email" type="text" class="govuk-input">
+    ```
+    
+    * The label is wrapped in a govuk-form-group element.
+    * The input field has an ID of "email", which should be used as the corresponding value for the label's for attribute.
+    
+    **Step 4: Add the Password Input Field**
+    
+    ```html
+    <label for="password" class="govuk-label">Password</label>
+    <input id="password" name="password" type="password" class="govuk-input">
+    ```
+    
+    * This password input field has an ID of "password", which should be used as the corresponding value for the label's for attribute.
+    
+    **Step 5: Add the Continue Button**
+    
+    ```html
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    ```
+    
+    * The button is wrapped in a govuk-form-group element.
+    * The button has a data-module attribute set to "govuk-button".
+    
+    **Step 6: Close the Form Group**
+    
+    ```html
+    </div>
+    ```
+    
+    This closes the form group div.
+    
+    Here is the complete HTML code:
+    ```html
+    <div class="govuk-form-group">
+      <label for="email" class="govuk-label">Email address</label>
+      <input id="email" name="email" type="text" class="govuk-input">
+      <label for="password" class="govuk-label">Password</label>
+      <input id="password" name="password" type="password" class="govuk-input govuk-input--width-10">
+    </div>
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    ```
+    
+    Note that this code does not include any hints or errors, as there are none present in the wireframe image.
+    </main>
+
+
+
+   
+
+{% endblock %}

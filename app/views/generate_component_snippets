@@ -1,0 +1,192 @@
+# List of remaining GDS components that weren't generated yet
+remaining_components = {
+    "details.txt": '''Use the details component to show extra content the user can choose to reveal.
+
+Example:
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">Help with nationality</span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in.
+  </div>
+</details>
+''',
+
+    "error-message.txt": '''Use the error message component to display validation messages near a specific input.
+
+Example:
+<p class="govuk-error-message">
+  <span class="govuk-visually-hidden">Error:</span> Enter your name
+</p>
+''',
+
+    "fieldset.txt": '''Use the fieldset component to group related form fields.
+
+Example:
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">Personal details</legend>
+  <!-- Include inputs or radios here -->
+</fieldset>
+''',
+
+    "hint.txt": '''Use the hint component to give users helpful info next to a label.
+
+Example:
+<span id="dob-hint" class="govuk-hint">For example, 31 3 1980</span>
+''',
+
+    "inset-text.txt": '''Use the inset text component to highlight important content inside a grey box.
+
+Example:
+<div class="govuk-inset-text">
+  It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+</div>
+''',
+
+    "label.txt": '''Use labels to describe inputs and link them using the for and id attributes.
+
+Example:
+<label class="govuk-label" for="email">Email address</label>
+<input class="govuk-input" id="email" name="email" type="email">
+''',
+
+    "notification-banner.txt": '''Use the notification banner to confirm a successful action.
+
+Example:
+<div class="govuk-notification-banner" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">Important</h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">Your application has been received</p>
+  </div>
+</div>
+''',
+
+    "pagination.txt": '''Use pagination to help users navigate through search results or long lists.
+
+Example:
+<nav class="govuk-pagination" role="navigation" aria-label="results">
+  <ul class="govuk-pagination__list">
+    <li class="govuk-pagination__item govuk-pagination__item--previous">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+        <span class="govuk-pagination__link-title">Previous</span>
+      </a>
+    </li>
+    <li class="govuk-pagination__item govuk-pagination__item--next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next">
+        <span class="govuk-pagination__link-title">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+''',
+
+    "panel.txt": '''Use the panel component to highlight confirmation messages or key info.
+
+Example:
+<div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">Application complete</h1>
+  <div class="govuk-panel__body">Your reference number<br><strong>HDJ2123F</strong></div>
+</div>
+''',
+
+    "phase-banner.txt": '''Use the phase banner to show if a service is in alpha, beta, or live.
+
+Example:
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+    <span class="govuk-phase-banner__text">This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+''',
+
+    "skip-link.txt": '''Use the skip link to help keyboard users jump to the main content.
+
+Example:
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+''',
+
+    "summary-list.txt": '''Use the summary list component to display key-value pairs like answers to questions.
+
+Example:
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">John Smith</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> name</span></a>
+    </dd>
+  </div>
+</dl>
+''',
+
+    "table.txt": '''Use the table component to display structured tabular data.
+
+Example:
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Monthly costs</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Item</th>
+      <th class="govuk-table__header" scope="col">Cost</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Travel</td>
+      <td class="govuk-table__cell">£100</td>
+    </tr>
+  </tbody>
+</table>
+''',
+
+    "tabs.txt": '''Use the tabs component to switch between different sections of related content.
+
+Example:
+<div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">Contents</h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">Past day</a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">Past week</a>
+    </li>
+  </ul>
+  <div class="govuk-tabs__panel" id="past-day">
+    <p class="govuk-body">Content for past day.</p>
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <p class="govuk-body">Content for past week.</p>
+  </div>
+</div>
+''',
+
+    "tag.txt": '''Use the tag component to label things with short statuses.
+
+Example:
+<strong class="govuk-tag">NEW</strong>
+''',
+
+    "warning-text.txt": '''Use the warning text component to alert users to important information.
+
+Example:
+<div class="govuk-warning-text" role="alert">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+    You must be 18 or over to use this service.
+  </strong>
+</div>
+'''
+}
+
+# Write each snippet file individually
+component_path = Path("./prompt_snippets/components")
+for file_name, snippet_content in remaining_components.items():
+    (component_path / file_name).write_text(snippet_content, encoding="utf-8")
+
+"./prompt_snippets/components"

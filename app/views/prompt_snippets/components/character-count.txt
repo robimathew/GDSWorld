@@ -1,0 +1,8 @@
+Use the character count component for long text input with a character limit.
+
+Example:
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">Can you provide more detail?</label>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-info"></textarea>
+  <div id="more-detail-info" class="govuk-hint">You can enter up to 200 characters</div>
+</div>

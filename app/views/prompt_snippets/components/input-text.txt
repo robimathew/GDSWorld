@@ -1,0 +1,14 @@
+Use this structure for a text input field using the GOV.UK Design System:
+
+- Wrap the field in a `govuk-form-group`
+- Use a `govuk-label` above the input
+- Use `govuk-input` class on the <input> element
+- Add a width modifier if needed (e.g. `govuk-input--width-10`)
+- Use appropriate `autocomplete` values
+- Ensure label `for` matches input `id`
+
+Example:
+<div class="govuk-form-group">
+  <label class="govuk-label" for="first-name">First name</label>
+  <input class="govuk-input govuk-input--width-20" id="first-name" name="first-name" type="text" autocomplete="given-name">
+</div>

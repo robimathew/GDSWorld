@@ -1,0 +1,108 @@
+{% extends "layouts/main.html" %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<div class="govuk-width-container">
+  <nav class="govuk-!-display-none-print">
+    {{govukBackLink({
+      text: "Back",
+      "href": "javascript: window.history.go(-1)"
+    })}}
+    <a href="ukef-tiles.html" class="govuk-link govuk-link--no-visited-state govuk-!-margin-top-3 govuk-!-margin-bottom-3 float-right">
+    </a>
+  </nav>
+{% endblock %}
+
+{% block pageTitle %}
+Page title based on the H1 tag
+{% endblock %}
+
+{% block content %}
+
+**Step 1: Identify the components in the wireframe**
+
+The wireframe shows a sign-in page with the following components:
+
+*   Email address input field
+*   Password input field
+*   Continue button
+
+**Step 2: Determine the HTML structure for each component**
+
+Based on the GOV.UK Design System guidelines, we can determine the HTML structure for each component as follows:
+
+*   Email address input field:
+    *   Wrap in a govuk-form-group element
+    *   Use a govuk-label element with id="email-address" and name="email-address"
+    *   Use a govuk-input element with id="email-address" and name="email-address"
+*   Password input field:
+    *   Wrap in a govuk-form-group element
+    *   Use a govuk-label element with id="password" and name="password"
+    *   Use a govuk-input element with id="password" and name="password"
+*   Continue button:
+    *   Use a govuk-button element with data-module="govuk-button"
+
+**Step 3: Generate the HTML code**
+
+Here is the generated HTML code based on the wireframe:
+
+```html
+<div class='govuk-form-group'>
+  <label class='govuk-label' id='email-address' for='email-address'>Email address</label>
+  <input class='govuk-input' id='email-address' name='email-address' type='text' autocomplete='email'>
+</div>
+
+<div class='govuk-form-group'>
+  <label class='govuk-label' id='password' for='password'>Password</label>
+  <input class='govuk-input' id='password' name='password' type='password' autocomplete='current-password'>
+</div>
+
+<button class='govuk-button' data-module='govuk-button'>Continue</button>
+```
+
+**Step 4: Add accessibility features**
+
+To make the HTML code more accessible, we can add some additional attributes and classes:
+
+```html
+<div class='govuk-form-group'>
+  <label class='govuk-label govuk-label--l' id='email-address' for='email-address'>Email address</label>
+  <input class='govuk-input govuk-input--width-10' id='email-address' name='email-address' type='text' autocomplete='email'>
+</div>
+
+<div class='govuk-form-group'>
+  <label class='govuk-label govuk-label--l' id='password' for='password'>Password</label>
+  <input class='govuk-input govuk-input--width-10' id='password' name='password' type='password' autocomplete='current-password'>
+</div>
+
+<button class='govuk-button' data-module='govuk-button'>Continue</button>
+```
+
+**Step 5: Finalize the HTML code**
+
+The final HTML code is:
+
+```html
+<div class='govuk-form-group'>
+  <label class='govuk-label govuk-label--l' id='email-address' for='email-address'>Email address</label>
+  <input class='govuk-input govuk-input--width-10' id='email-address' name='email-address' type='text' autocomplete='email'>
+</div>
+
+<div class='govuk-form-group'>
+  <label class='govuk-label govuk-label--l' id='password' for='password'>Password</label>
+  <input class='govuk-input govuk-input--width-10' id='password' name='password' type='password' autocomplete='current-password'>
+</div>
+
+<button class='govuk-button' data-module='govuk-button'>Continue</button>
+```
+
+{% endblock %}

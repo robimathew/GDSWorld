@@ -1,0 +1,26 @@
+Use this structure for radio buttons with the GOV.UK Design System:
+
+- Wrap in `govuk-form-group` and `govuk-radios`
+- Each option should be inside `govuk-radios__item`
+- Use `govuk-label` for each option
+- Match `for` on label with input `id`
+- Use a `fieldset` and `legend` if there's a question label
+
+Example:
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      What is your favourite colour?
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="colour-red" name="colour" type="radio" value="red">
+        <label class="govuk-label govuk-radios__label" for="colour-red">Red</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="colour-blue" name="colour" type="radio" value="blue">
+        <label class="govuk-label govuk-radios__label" for="colour-blue">Blue</label>
+      </div>
+    </div>
+  </fieldset>
+</div>

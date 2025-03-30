@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<div class="govuk-width-container">
+  <nav class="govuk-!-display-none-print">
+    {{govukBackLink({
+      text: "Back",
+      "href": "javascript: window.history.go(-1)"
+    })}}
+    <a href="ukef-tiles.html" class="govuk-link govuk-link--no-visited-state govuk-!-margin-top-3 govuk-!-margin-bottom-3 float-right">
+    </a>
+  </nav>
+{% endblock %}
+
+{% block pageTitle %}
+Page title based on the H1 tag
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="postcode">What is your home postcode?</label>
+  <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code">
+</div>
+
+{% endblock %}

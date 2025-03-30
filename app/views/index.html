@@ -4,17 +4,96 @@
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
-
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service. Help us improve it and <a class="govuk-link" href="#">give your feedback by email</a>.
+      </span>
+    </p>
   </div>
-</div>
+
+
+
+    <div class="govuk-width-container">
+        <a href="#" class="govuk-back-link">Back</a> <!-- Back link -->
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-l">Check your answers before sending your application</h1>
+
+                    <!-- Personal Details Section -->
+                    <h2 class="govuk-heading-m">Page pattern</h2>
+                    <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Question page </dt>
+                            <dd class="govuk-summary-list__value">1- Radio button</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="question-page-RB.html">Change<span class="govuk-visually-hidden"> name</span></a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Date of birth</dt>
+                            <dd class="govuk-summary-list__value">Checkbox</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="date-of-birth.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Textbox</dt>
+                            <dd class="govuk-summary-list__value">Single text box</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="text-input.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Start page</dt>
+                            <dd class="govuk-summary-list__value">Intro</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="start-page.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Date of birth</dt>
+                            <dd class="govuk-summary-list__value">Checkbox</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="date-of-birth.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Date of birth</dt>
+                            <dd class="govuk-summary-list__value">Checkbox</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="date-of-birth.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+                            </dd>
+                        </div>
+                       
+                    </dl>
+
+                  
+
+                    <!-- Declaration Section -->
+                    <h2 class="govuk-heading-m">Now send your application</h2>
+                    <p class="govuk-body">
+                        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+                    </p>
+                    <form action="#" method="post">
+                        <button type="submit" class="govuk-button" data-module="govuk-button">
+                            Accept and send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+ 
+
+
+
+   
 
 {% endblock %}

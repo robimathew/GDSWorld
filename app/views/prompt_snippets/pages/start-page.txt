@@ -1,0 +1,12 @@
+Use this structure for a start page using the GOV.UK Design System:
+
+- Include a large heading
+- Use introductory text
+- Add a start button linking to the first step
+
+Example:
+<h1 class="govuk-heading-xl">Apply for something important</h1>
+<p class="govuk-body">Use this service to apply for something.</p>
+<a href="/next-step" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+  Start now
+</a>

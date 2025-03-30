@@ -1,0 +1,18 @@
+Use checkboxes to let users select multiple options from a list.
+
+Example:
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">Select your interests</legend>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="interest-sports" name="interests" type="checkbox" value="sports">
+        <label class="govuk-label govuk-checkboxes__label" for="interest-sports">Sports</label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="interest-music" name="interests" type="checkbox" value="music">
+        <label class="govuk-label govuk-checkboxes__label" for="interest-music">Music</label>
+      </div>
+    </div>
+  </fieldset>
+</div>

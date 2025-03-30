@@ -1,0 +1,16 @@
+Use this structure for a task list pattern in the GOV.UK Design System:
+
+- Use a heading
+- Create a list of tasks with statuses
+- Use `govuk-task-list` class (if using extended styles) or plain lists with `govuk-list`
+
+Example:
+<h1 class="govuk-heading-xl">Application process</h1>
+<ul class="govuk-list govuk-list--spaced">
+  <li>
+    <a class="govuk-link" href="/task-1">Task 1: Fill in your details</a> – Completed
+  </li>
+  <li>
+    <a class="govuk-link" href="/task-2">Task 2: Upload documents</a> – Not started
+  </li>
+</ul>
